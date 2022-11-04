@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokepedia</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
+    <script src="./js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="nav">
+      <div class="container-fluid theme shadow-lg mb-5">
+        <nav class="navbar">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" class="navimg" width="150px" alt="" />
+          </a>
+          <section class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              id="text"
+            />
+            <button
+              class="btn bg-info btnn"
+              type="submit"
+              onclick="getPokemon()"
+              id="search"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </button>
+          </section>
+        </nav>
+      </div>
+    </div>
+
+    <div id="Pokecard"></div>
+
+    <!-- <div id="footer"> -->
+    <!-- <footer class="container-fluid sticky-bottom"> -->
+    <!-- <h6>This Website is build by Siddharth Dyamgond</h6> -->
+    <!-- </footer> -->
+    <!-- </div> -->
+  </body>
+</html>
+
+<!-- <div class="container p-3 bg-white"> -->
+<!-- <h1 class="text-center"> -->
+<!-- Pokemon encyclopedia - ${capitalizeFirstLetter(data.name)} -->
+<!-- </h1> -->
+<!-- <br /> -->
+<!-- <center> -->
+<!-- <img src="${data.sprites.other["official-artwork"].front_default}" -->
+<!-- class="img-fluid" alt="text" /> -->
+<!-- </center> -->
+<!-- <div class="container p-3"> -->
+<!-- <h4>ID: #${(data.id)}</h4> -->
+<!-- <br /> -->
+<!-- <h5>Type: ${data.types.0["type"].name}</h5> -->
+<!-- <br /> -->
+<!-- <h5>Description:</h5> -->
+<!-- <table class="table"> -->
+<!-- <thead> -->
+<!-- <tr> -->
+<!-- <th scope="col">Base Experience</th> -->
+<!-- <th scope="col">Height</th> -->
+<!-- <th scope="col">Weight</th> -->
+<!-- </tr> -->
+<!-- </thead> -->
+<!-- <tbody> -->
+<!-- <tr> -->
+<!-- <td>${data.base_experience}</td> -->
+<!-- <td>${data.weight}</td> -->
+<!-- <td>${data.height}</td> -->
+<!-- </tr> -->
+<!-- </tbody> -->
+<!-- <br /> -->
+<!-- <thead> -->
+<!-- <tr> -->
+<!-- <th scope="col">Base stat</th> -->
+<!-- <th scope="col">Height</th> -->
+<!-- <th scope="col">Weight</th> -->
+<!-- </tr> -->
+<!-- </thead> -->
+<!-- <tbody> -->
+<!-- <tr> -->
+<!-- <td>${data.base_stat}</td> -->
+<!-- <td>Otto</td> -->
+<!-- <td>@mdo</td> -->
+<!-- </tr> -->
+<!-- </tbody> -->
+<!-- </table> -->
+<!-- </div> -->
+<!-- </div> -->
